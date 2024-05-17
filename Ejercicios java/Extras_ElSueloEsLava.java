@@ -5,9 +5,9 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         boolean[][] table = {{false, false, false, false},
-                             {true , true , true , true },
+                             {true , true , false, true },
                              {false, false, false, false},
-                             {false, false, false, false }};
+                             {false, false, false, false}};
         int posicionInicial[] = {3, 0};
         int posicionFinal[] = {0, 0};
         System.out.println(lava(table, posicionInicial, posicionFinal));
