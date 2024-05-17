@@ -85,7 +85,7 @@ public class Main {
         return contador;
     }
     static boolean comprobarLados(int[][] table, int x, int y){
-        return limites(table, x, y) && (table[x][y] == 0); //lo de antes del and comprueba que este en los limites y la otra parte comprueba que sea 0, para evitar convertir los 1 que son muros en casillas ocupadas
+        return limites(table, x, y) && (table[x][y] == 0); //lo de antes del and comprueba que este en los limites y la otra parte comprueba que sea 0, para evitar convertir los 1 que son muros
     }
     static boolean limites(int[][] table, int x, int y) {//comprueba que no haya out of bounds mirando los limites
         return x >= 0 && x < table.length && y >= 0 && y < table.length;
